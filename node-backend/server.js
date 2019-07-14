@@ -1,1 +1,9 @@
-console.log("Hello World!");
+const http = require('http');
+const app = require('./app');
+const port = process.env.PORT || 3000;
+app.set('port', port);
+
+// req & res provide utility methods that allow the ability to handle HTTP requests and responses.
+const server = http.createServer(app);
+
+server.listen(port);
