@@ -1,0 +1,11 @@
+.postsContainer, .postListContainer { 
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wallPosts {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+}

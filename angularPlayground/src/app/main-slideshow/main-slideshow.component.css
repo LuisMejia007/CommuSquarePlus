@@ -1,0 +1,24 @@
+.carousel-item { 
+    height: 400px;
+}
+
+.carousel-item img { 
+    height: 100%;
+}
+
+.carousel, .slide { 
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators{ 
+
+    z-index: 0 !important;
+}
+
+@media only screen and (max-width: 700px) { 
+    .carousel{
+        width: 100%;
+    }
+}

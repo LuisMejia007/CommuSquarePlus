@@ -1,0 +1,11 @@
+<app-main-wall-heading [mainWall] = "wall"></app-main-wall-heading>
+
+<div class = "postsContainer"> 
+  <ul class = "postListContainer">
+    <li class = "wallPosts" *ngFor = "let post of posts"> 
+      <app-post-card-component [postCard] = "post"></app-post-card-component>
+    </li>
+  </ul>
+</div>
+
+<app-create-post-component></app-create-post-component>

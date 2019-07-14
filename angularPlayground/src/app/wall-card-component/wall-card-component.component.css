@@ -1,0 +1,25 @@
+
+
+.wallCard { 
+    height: 400px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    display: block;
+    float: left;
+    margin: 5px;
+    background-color: black;
+}
+
+.wallCard:hover { 
+    cursor: pointer;
+}
+/* .wallCardContainer {
+    height: 400px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+} */
+
+.wallHeader { 
+    color: white;
+    font-size: 2em;
+    margin: 25px auto;
+    text-align: center;
+}

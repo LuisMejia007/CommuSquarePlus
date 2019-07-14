@@ -1,0 +1,24 @@
+<div class = "col-md-8 col-sm-12 newPostContainer"  >
+  <form class = "newPostForm" [@createPost] = "createPostAnimationState">
+
+    <div class = "form-group">
+        <label class = "newPostLabel"> Post Title </label>
+        <input class = "form-control" placeholder = "Enter your post title" [ngModel] = "postTitle" name= "title" (ngModelChange) = "enterPostTitle($event)">
+    </div>
+
+    <div class = "form-group">
+        <label class = "newPostLabel"> Content </label>
+        <input class = "form-control postContentInput" placeholder= "Enter your feelings, thoughts, whatever!" [ngModel] = "postContent" name = "content" (ngModelChange) = "enterPostContent($event)"> 
+    </div>
+
+    <button type = "button" class = "btn btn-primary" (click) = "makePost()"> Submit </button>
+    <button type = "button" class = "btn btn-danger" (click) = "cancelPostState()"> Cancel </button>
+    
+  </form>  
+</div>
+
+<div class = "col-md-8 col-sm-12 createPostButtonContainer">
+  <button class = " col-md-12 btn btn-primary createPostButton" (click) = "createPostState()">
+    Create Post
+  </button>
+</div>

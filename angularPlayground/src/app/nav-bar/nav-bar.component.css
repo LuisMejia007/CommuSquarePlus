@@ -1,0 +1,58 @@
+.dummy-container{ 
+    height: 150px;
+    
+}
+.nav-bar-container, .nav-bar, .nav-bar-list { 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+}
+
+.nav-bar-container { 
+    /* background-image: url("/assets/imgs/ashSnakePic.jpg");
+    background-size: cover; */
+    background-color: black;
+    height: 150px;
+    
+    
+}
+
+.nav-bar-list { 
+    bottom: 0;
+}
+.nav-bar-list { 
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    display: block;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+}
+.nav-bar-header { 
+    width: 20%;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    display: block;
+    font-size: 2em;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+}
+
+.nav-bar-list-item {
+    display: block;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 33.33%;
+    float: left;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+}
+nav { 
+ 
+}

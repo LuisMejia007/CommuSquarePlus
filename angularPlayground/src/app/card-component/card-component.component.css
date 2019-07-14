@@ -1,0 +1,21 @@
+.card-header{ 
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
+
+.card-box-1, .card-box-2, .card-box-3 { 
+    display: block;
+    float: left;
+    margin: 0 auto;
+}
+.card-box-1{ 
+    background-color: red;
+}
+.card-box-2{ 
+    background-color: blue;
+}
+
+.card-box-3{
+    background-color: green;
+}

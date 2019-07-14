@@ -1,0 +1,12 @@
+.wallDescriptionContainer, .wallNameContainer { 
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+.wallName, .wallDescription { 
+    text-align: center;
+}
+
+.wallDescription { 
+    font-size: 1.5em;
+}

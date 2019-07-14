@@ -1,0 +1,44 @@
+.postCardContainer { 
+    display: block;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0, 0.5);
+    height: 300px;
+    margin: 5px auto;
+}
+
+.postCardTitleContainer, .postCardDateContainer { 
+    display: block;
+    margin: 0 auto;
+    float: left;
+    padding: 0;
+}
+
+.postCardContentContainer { 
+    width: 100%;
+}
+
+.postCardContent { 
+    padding: 0;
+}
+.postCardTitle, .postCardDate { 
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+.postCardHeadingContainer, .postCardContentContainer { 
+
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+
+.postCardContentContainer { 
+    margin-top: 30px;
+}
+
+.postCardDate { 
+    color: gray;
+    font-size: 13px;
+}
+

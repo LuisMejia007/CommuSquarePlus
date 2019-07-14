@@ -1,0 +1,7 @@
+<div *ngFor = "let wall of walls" class = "col-md-6 col-sm-12 wallCardContainer">
+  <div (click) = "selectWall(wall)" class = "col-md-6 col-sm-12 wallCard">
+      <div class = "col-md-12 col-sm-12 wallHeaderContainer" > 
+          <h1 class = "wallHeader"> {{ wall.wallName }} </h1>
+      </div>
+  </div>
+</div>
