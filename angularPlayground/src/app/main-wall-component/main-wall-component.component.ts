@@ -40,7 +40,7 @@ export class MainWallComponentComponent implements OnInit {
     this.service.getWallById(this.wallId)
     .subscribe( data => {
       this.wall = data;
-      console.log(this.wall.wallName);
+      console.log(this.wall.wall_name);
     });
   }
 

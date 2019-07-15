@@ -1,11 +1,11 @@
 export class Wall {
-    public wallName: string;
-    public wallDescription: string;
-    public wallId;
+    public wall_name: string;
+    public wall_description: string;
+    public wall_id;
 
 
     constructor(wallName?: string, wallDescription?: string) {
-        this.wallName = wallName;
-        this.wallDescription = wallDescription;
+        this.wall_name = wallName;
+        this.wall_description = wallDescription;
     }
 }

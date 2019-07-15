@@ -24,14 +24,14 @@ export class WallCardComponentComponent implements OnInit {
 
   getWalls() {
     this.service.getWalls()
-    .subscribe(data => { this.walls = data; });
+    .subscribe(data => { this.walls = data; console.log(data); });
   }
 
   selectWall(wall: Wall) {
     // Using relative URL paths (relative meaning that we dont need to be completely explicit of the url path)
     // On the bottom right we use relativeTo to specify that we're still using this component's route path (/walls/)
     // On the bottom left we place the wall's id to specify which wall we want to go to .
-    this.router.navigate([wall.wallId], { relativeTo: this.activatedRoute});
+    this.router.navigate([wall.wall_id], { relativeTo: this.activatedRoute});
   }
 
 

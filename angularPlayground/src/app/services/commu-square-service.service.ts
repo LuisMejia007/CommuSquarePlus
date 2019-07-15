@@ -20,7 +20,7 @@ export class CommuSquareServiceService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = 'http://localhost:8080/';
+  baseUrl = 'http://localhost:3000/api/commuSquare/';
   stompClient: any;
   messageSubject$ = new BehaviorSubject<string>('subject');
 
@@ -47,6 +47,7 @@ export class CommuSquareServiceService {
 
   getWallById(id: number): Observable<Wall> {
     const url = this.baseUrl + 'walls/' + id;
+    console.log('Url we\'re making the req too:' + url);
     return this.http.get<Wall>(url, httpOptions);
   }
 
@@ -56,12 +57,12 @@ export class CommuSquareServiceService {
   addPost(post: Post): Observable<Post> {
     const url = this.baseUrl + 'addPost';
     console.log('Adding post with given url: ' + url);
-    console.log('Post: ' + post.postTitle + ' ' + post.postContent);
+    console.log('Post: ' + post.post_title + ' ' + post.post_content);
     return this.http.post<Post>(url, post, httpOptions);
   }
 
   getPostsByWallId(id: number): Observable<Post[]> {
-    const url = this.baseUrl + 'getPosts/' + id;
+    const url = this.baseUrl + 'posts/' + id;
     return this.http.get<Post[]>(url, httpOptions);
   }
 
